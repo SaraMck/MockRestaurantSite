@@ -25,7 +25,8 @@ footer {
     border: 2px solid darkgrey;
     display: inline-block;
     margin: 5px;
-    margin-left: 75%;
+    margin-left: 5%;
+    margin-bottom: 3%;
 }
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)), url(img/header.jpg);
@@ -96,6 +97,10 @@ footer {
 .page-link p {
     padding-left: 15px;
 }
+#email-us, #call-us, #visit-us{
+    width: 20%;
+    margin-left: 4%;
+}
 
 #nav-bar {
     padding: 0;
@@ -136,4 +141,35 @@ footer {
     color: black;
 }
 
+#email-us .email-link{
+    text-decoration: underline;
+    color: blue;
+}
+
+
 /* when width < 875px, snap to mobile tailored displays (max-width: 875px) */
+@media only screen and (max-width: 890px) {
+    
+    header {
+        height: 90%;
+    }
+    .page-link {
+        width: 75%;
+        margin-left: 10%;
+    }
+
+    #email-us, #call-us, #visit-us{
+        width: 75%;
+        margin-left: 10%;
+    }
+
+    #nav-bar {
+        width: 100%;
+        margin-bottom: 40%;
+    }
+    #nav-bar ul li {
+        display: block;
+        text-align: center;
+    }
+   
+}
