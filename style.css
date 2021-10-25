@@ -6,14 +6,13 @@ html, body {
     background-color: rgb(46, 45, 45);
 }
 header {
-    height: 50%;
+    height: 75%;
     font-weight: bold;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 footer {
     background-color: lightgray;
     height: 15%;
-    border-top: 1px solid black;
     font-size: 13px;
     font-weight: bold;
 }
@@ -63,15 +62,20 @@ footer {
     left: 47%;
     position: absolute;
     text-decoration: none;
+    text-align: center;
     background-color: white;
     color: black;
     font-size: 17px;
     padding: 15px 40px;
     border-radius: 15px;
-
+    width: 3%;
+    height: 3%;
 }
 .menu-box-link:hover {
     background-color: rgba(255, 255, 255, 0.849);
+    animation: shake-box 5s;
+    animation-iteration-count: infinite;
+
 }
 .page-link {
     border: 7px solid rgb(10, 10, 10);
@@ -172,4 +176,18 @@ footer {
         text-align: center;
     }
    
+}
+
+@keyframes shake-box {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(5deg);}
+    20% {transform: rotate(-5deg);}
+    30% {transform: rotate(5deg);}
+    40% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    60% {transform: rotate(-5deg);}
+    70% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    90% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
 }
